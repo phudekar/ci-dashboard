@@ -1,0 +1,30 @@
+.status-update{
+  position: absolute;
+  top: 20px;
+  left:20px;
+}
+
+.status-form{
+  background:white;
+  min-width: 20vw;
+  display: flex;
+  flex-direction: column;
+  padding:20px;
+  text-align: left;
+  box-shadow: 1px 1px 15px 2px #515151;
+}
+
+.status-form input, .status-form select , .status-form button {
+  padding:10px;
+  font-size: 1.1em;
+  min-width: 200px;
+  margin-bottom: 10px;
+}
+
+.btn{
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+

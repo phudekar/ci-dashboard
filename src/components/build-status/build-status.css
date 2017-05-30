@@ -1,0 +1,29 @@
+.failed {
+  background-color: salmon;
+}
+
+.success {
+  background-color: greenyellow;
+}
+
+.status {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.test-result{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 36px;
+}
+
+.failed-tests{
+  font-size: 72px;
+}
+
+.owner{
+  margin:20px;
+  font-size: 30px;
+}

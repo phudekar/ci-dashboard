@@ -1,18 +1,30 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import BuildStatus from './components/build-status';
+import StatusUpdate from './components/status-update';
 
 class App extends Component {
+
+  constructor() {
+    super();
+
+    this.state = {
+      status: {
+        result: 'failed',
+        testResult: {
+          failed: 10
+        },
+        owner: ''
+      }
+    }
+  }
+
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="App container">
+        <BuildStatus status={this.state.status} />
+          <StatusUpdate status={this.state.status} onStatusUpdated={(status) => this.setState({ status: status })} />
       </div>
     );
   }
