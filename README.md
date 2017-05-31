@@ -1,2 +1,2 @@
-Manual Customization Dashboard
+Manual Customizable Dashboard
 ====
