@@ -1,5 +1,31 @@
 .App {
   text-align: center;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.result-row {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.App.failed {
+  background-color: salmon; 
+}
+
+.App.success {
+  background-color: greenyellow; 
+}
+
+.row-actions{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 10px;
+}
+
+.btn{
+    font-size: 16px;  
 }

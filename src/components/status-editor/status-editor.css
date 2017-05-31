@@ -1,7 +1,7 @@
 .status-update{
-  position: absolute;
-  top: 20px;
-  left:20px;
+  position: relative;
+  bottom: 0px;
+  font-size: 16px;
 }
 
 .status-form{
@@ -16,7 +16,7 @@
 
 .status-form input, .status-form select , .status-form button {
   padding:10px;
-  font-size: 1.1em;
+  font-size: 16px;
   min-width: 200px;
   margin-bottom: 10px;
 }
